@@ -7,14 +7,34 @@
     }
 }
 
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    height: calc(100% / 3);
+}
+
+.row:nth-child(1),
+.row:nth-child(3) {
+    height: 100px;
+}
+
+.rowContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 body {
     animation: 1s ease-out 0s 1 slideInLeft;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
-    display: table;
 }
 
 header {
